@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique Pixel War 2024</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script defer src="v1/main.js" type="module"></script>
+    <style>
+        input, button {
+            font-size: 3vh;
+            outline: none;
+            background: none;
+            border: solid black 0.2vh;
+            border-radius: 0.6vh;
+            cursor: pointer;
+        }
+        input:hover, button:hover {
+            background-color: rgb(212, 212, 212);
+        }
+        .disabled {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; overflow: hidden;">
+    <div
+        style="position: absolute; top: 0%; left: 0%; width: 100%; height: 5%; display: flex; align-items: center; justify-content: center;">
+        <input type="datetime-local" id="time"/><button id="reload" style="margin-left: 1%;">Actualiser</button>
+    </div>
+    <div style="position: absolute; top: 5%; left: 0%; width: 100%; height: 95%; display: flex; align-items: center; justify-content: center;">
+        <canvas style="border: solid black 0.5vh;" id="canvas"></canvas>
+    </div>
+    <div style="position: absolute; top: 0%; left: 0%; width: 20%; height: 97%; overflow: auto; background-color: white; padding: 1%;">
+        <strong>
+            Historique de la PixelWar
+            de mars 2024
+            organisé par la <a href="https://www.instagram.com/la404.devinci?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">404Devinci</a></strong>
+        <p>
+            Sur ce site vous allez pouvoir accéder au canva de la <a href="https://war.404devinci.fr/" target="_blank">Pixel War</a> à un instant t.
+            L'objectif est de revoir les oeuvres se dessiner, les batailles se commencer et pleins d'autres merveilles que nous avons vécu durant cet évènement.
+        </p>
+        <p>Des <strong>bugs</strong> d'affichage sur le canva sont fortement visibles. Cela est dû à un problème d'enregistrement des données. Je vais faire tout mon possible pour les corriger.</p>  
+        <p>Ce site a été développé par mes soins à l'aide des données de la <a href="https://war.404devinci.fr/" target="_blank">Pixel War</a>. Je ne fais pas partie de l'association <a href="https://www.instagram.com/la404.devinci?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">404Devinci</a> et je n'ai pas des skills de fou en code. Donc merci de rester indulgent face au travail qui a été fait ;)</p>
+        <p>Je tiens à remercier l'ensemble des membres de l'association <a href="https://www.instagram.com/la404.devinci?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">404Devinci</a> qui ont mis en place et fais le support de cette magnifique <a href="https://war.404devinci.fr/" target="_blank">Pixel War</a> <3</p>
+    </div>
+    <div stylce="position: absolute; bottom: 0%; right: 0%;">v1</div>
+</body>
+
+</html>
